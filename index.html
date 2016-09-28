@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Create droid</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+    <h1 class="main-title">Создай своего робота</h1>
+    <div class="form">
+        <form class="main-form" id="main-form" action="" method="post">
+
+            <div class="form-title">
+                <label for="droidname">Введи имя робота</label>
+            </div>
+            <div class="form-field">
+                <input type="text" id="droidname" name="droidname" placeholder="Имя" required>
+            </div>
+
+            <div class="form-title">Выбери тип робота</div>
+            <div class="form-field select">
+              <select id = "main-select" required><option disabled selected="selected" value="None">Выбрать</option>
+              <option value="Рексотрон">Рексотрон</option>
+              <option value="Робокот">Робокот</option>
+              <option value="Автоклав">Автоклав</option>
+              <option value="Терработ">Терработ</option><
+              <option value="Гуманоид">Гуманоид ФФ-3</option>
+              <option value="Гусар">Гусар</option></select>
+            </div>
+
+            <div class="form-title">Введи цвет робота</div>
+            <div class="form-field radio">
+                <div class="radio-orange radio-btn"><input type="radio" id="orange" name="color" value="orange" checked></div>
+                <div class="radio-red radio-btn"><input type="radio" id="red" name="color" value="red"></div>
+                <div class="radio-green radio-btn"><input type="radio" id="green" name="color" value="green"></div>
+                <div class="radio-pirple radio-btn"><input type="radio" id="pirple" name="color" value="pirple"></div>
+                <div class="radio-blue radio-btn"><input type="radio" id="blue" name="color" value="blue"></div>
+                <div class="radio-grey radio-btn"><input type="radio" id="grey" name="color" value="grey"></div>
+            </div>
+
+            <div class="form-title"></div>
+            <div class="form-field">
+                <input type="submit" class="btn" value="Продолжить" id="submit-btn">
+            </div>
+
+        </form>
+    </div>
+    <div class="img-droid" id="img-of-droid">
+        <img src="img/questionmark.png">
+    </div>
+    </div>
+    
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
